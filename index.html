@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfessionalEmail - Academic Email Assistant</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Transform your Outlook email drafts into polished professional messages with one click. The perfect tool for students writing to professors.">
+    <meta name="keywords" content="email assistant, academic writing, outlook plugin, student emails, professional emails">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="assets/images/logo.png" alt="Email Assistant Logo" class="w-10 h-10">
+                <span class="text-xl font-semibold text-gray-900">Email4Prof</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-16 text-center">
+        <!-- FREE badge -->
+        <span class="inline-block px-8 py-3 bg-green-100 text-green-600 rounded-full mb-6 text-2xl font-bold">
+            FREE
+        </span>
+        
+        <!-- SEO-optimized Main Title -->
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            Professional Email Assistant for Students<br/>
+            <span class="text-green-600">Write Perfect Emails to Professors</span>
+        </h1>
+        
+        <!-- SEO-focused subtitle -->
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+            The #1 Chrome Extension for Academic Email Writing. Transform your Outlook drafts into 
+            polished, professional emails with AI-powered assistance.
+        </p>
+
+        <div class="mb-12"> <!-- Add this after the subtitle paragraph -->
+            <a href="https://chromewebstore.google.com/detail/professor-email-assistant/hdbifjmfanmdpoljpiefcppacneemala" 
+               class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors text-lg font-semibold"
+               target="_blank"
+               rel="noopener">
+                Add to Chrome - It's Free
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
+                
+            <!-- Preview Section -->
+            <div class="space-y-8 max-w-5xl mx-auto">
+                <!-- Image Preview -->
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img 
+                        src="assets/images/screenshots/outlook-preview.png" 
+                        alt="Email Assistant Interface in Outlook" 
+                        class="w-full h-auto"
+                        style="aspect-ratio: 1400/800"
+                    />
+                </div>
+
+                <!-- Video Demo -->
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative" style="aspect-ratio: 1400/800">
+                        <video 
+                            class="w-full h-full object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                        >
+                            <source src="assets/videos/demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button 
+                        class="absolute bottom-4 right-4 bg-white/80 hover:bg-white p-2 rounded-full transition-colors"
+                        onclick="toggleVideo(this)"
+                        aria-label="Play/Pause video"
+                        title="Play/Pause video"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Feature 1: Cultural Context -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start space-x-3">
+                        <svg class="h-6 w-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold mb-1">Perfect Email Tone</h3>
+                            <p class="text-gray-600">Write culturally-appropriate, professional emails that make a great impression on your professors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: No Tab Switching -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start space-x-3">
+                        <svg class="h-6 w-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold mb-1">Seamless Integration</h3>
+                            <p class="text-gray-600">No more tab switching! Say goodbye to accidentally pasting "Generated by ChatGPT" in your emails 😬</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: One-Click Solution -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start space-x-3">
+                        <svg class="h-6 w-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold mb-1">One-Click Magic</h3>
+                            <p class="text-gray-600">Transform your draft into a polished professional email instantly with AI-powered suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="container mx-auto px-4 py-16 bg-gray-50">
+            <h2 class="text-3xl font-bold text-center mb-12">How to Use</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">1</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Write Your Draft</h3>
+                    <p class="text-gray-600">Write your email in Outlook as usual</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">2</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Click Extension</h3>
+                    <p class="text-gray-600">Click the extension icon</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">3</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Get Professional Email</h3>
+                    <p class="text-gray-600">Instantly receive polished text</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="container mx-auto px-4 py-16 text-center bg-green-50">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Start Writing Better Emails Today</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+                Using Outlook Web for your academic emails? Transform your drafts into polished, 
+                professional messages with our AI-powered Chrome extension 🤗
+            </p>
+            <a href="https://chromewebstore.google.com/detail/professor-email-assistant/hdbifjmfanmdpoljpiefcppacneemala" 
+            class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors text-lg font-semibold"
+            target="_blank"
+            rel="noopener">
+                Install Free Extension
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-white border-t mt-20">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500">
+            <p>© 2025 Email4Prof. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
